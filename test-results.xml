@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="24.5680" tests="16" failures="3">
+  <testsuite name="Root Suite" timestamp="2021-02-06T15:42:21" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="User Posts" timestamp="2021-02-06T15:42:21" tests="2" file="/Users/jeeva/Documents/api-testing/test/posts.js" time="3.0830" failures="0">
+    <testcase name="User Posts /posts" time="1.6420" classname="/posts">
+    </testcase>
+    <testcase name="User Posts GET/POSTS/:id" time="1.4410" classname="GET/POSTS/:id">
+    </testcase>
+  </testsuite>
+  <testsuite name="negative test" timestamp="2021-02-06T15:42:26" tests="2" file="/Users/jeeva/Documents/api-testing/test/posts.js" time="3.0620" failures="1">
+    <testcase name="negative test 401 authetication failed" time="1.5070" classname="401 authetication failed">
+    </testcase>
+    <testcase name="negative test 422 validation failed" time="1.5550" classname="422 validation failed">
+      <failure message="expected &apos;user&apos; to equal &apos;body&apos;" type="AssertionError"><![CDATA[AssertionError: expected 'user' to equal 'body'
+    at _callee5$ (test/posts.js:64:43)
+    at tryCatch (node_modules/regenerator-runtime/runtime.js:63:40)
+    at Generator.invoke [as _invoke] (node_modules/regenerator-runtime/runtime.js:293:22)
+    at Generator.next (node_modules/regenerator-runtime/runtime.js:118:21)
+    at asyncGeneratorStep (node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+    at _next (node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Users" timestamp="2021-02-06T15:42:29" tests="0" file="/Users/jeeva/Documents/api-testing/test/users-advanced.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="POST" timestamp="2021-02-06T15:42:29" tests="1" file="/Users/jeeva/Documents/api-testing/test/users-advanced.js" time="1.6380" failures="0">
+    <testcase name="Users POST post/users" time="1.6380" classname="post/users">
+    </testcase>
+  </testsuite>
+  <testsuite name="GET" timestamp="2021-02-06T15:42:31" tests="3" file="/Users/jeeva/Documents/api-testing/test/users-advanced.js" time="4.5050" failures="0">
+    <testcase name="Users GET get/users/undefined" time="1.6390" classname="get/users/undefined">
+    </testcase>
+    <testcase name="Users GET get/users" time="1.4320" classname="get/users">
+    </testcase>
+    <testcase name="Users GET get/users with query parameters" time="1.4340" classname="get/users with query parameters">
+    </testcase>
+  </testsuite>
+  <testsuite name="PUT" timestamp="2021-02-06T15:42:35" tests="1" file="/Users/jeeva/Documents/api-testing/test/users-advanced.js" time="1.4100" failures="0">
+    <testcase name="Users PUT put/users/:id" time="1.4100" classname="put/users/:id">
+    </testcase>
+  </testsuite>
+  <testsuite name="DELETE" timestamp="2021-02-06T15:42:36" tests="1" file="/Users/jeeva/Documents/api-testing/test/users-advanced.js" time="1.5930" failures="0">
+    <testcase name="Users DELETE delete/users/:id" time="1.5930" classname="delete/users/:id">
+    </testcase>
+  </testsuite>
+  <testsuite name="Users" timestamp="2021-02-06T15:42:38" tests="6" file="/Users/jeeva/Documents/api-testing/test/users.js" time="9.2770" failures="2">
+    <testcase name="Users get/users" time="1.2950" classname="get/users">
+    </testcase>
+    <testcase name="Users get/users/120" time="1.4310" classname="get/users/120">
+      <failure message="expected undefined to equal 8" type="AssertionError"><![CDATA[AssertionError: expected undefined to equal 8
+    at /Users/jeeva/Documents/api-testing/test/users.js:17:44
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)]]></failure>
+    </testcase>
+    <testcase name="Users get/users with query parameters" time="1.6370" classname="get/users with query parameters">
+    </testcase>
+    <testcase name="Users POST/users" time="1.6350" classname="POST/users">
+    </testcase>
+    <testcase name="Users PUT /users/:id" time="1.6390" classname="PUT /users/:id">
+    </testcase>
+    <testcase name="Users DELETE /users/:id" time="1.6400" classname="DELETE /users/:id">
+      <failure message="expected { message: &apos;Resource not found&apos; } to equal null" type="AssertionError"><![CDATA[AssertionError: expected { message: 'Resource not found' } to equal null
+    at /Users/jeeva/Documents/api-testing/test/users.js:69:38
+    at processTicksAndRejections (node:internal/process/task_queues:93:5)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
